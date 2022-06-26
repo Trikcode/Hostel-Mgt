@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- title -->
+  <title>File Upload</title>
+  <!-- normalize css -->
+  <link rel="stylesheet" href="./normalize.css">
+  <!-- styles css -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <form class="form file-form" method="post" action="https://wiseteam-hostel-api.herokuapp.com/products">
+    <h4>File Upload</h4>
+    <!-- single row -->
+    <div class="form-row">
+      <label for="name" class="form-label">Hostel Name</label>
+      <input type="text" id="name" name="name" class="form-input">
+    </div>
+    <!-- end of single row -->
+    <!-- single row -->
+    <div class="form-row">
+      <label for="priceone">Product Price 1</label>
+      <input type="number" name="priceone" class="form-input" id="priceone">
+    </div>
+    <div class="form-row">
+      <label for="pricetwo">Product Price 2</label>
+      <input type="number" class="form-input" name="pricetwo" id="pricetwo">
+    </div>
+    <div class="form-row">
+      <label for="location">location</label>
+      <input class="form-input" name="location" id="location">
+    </div>
+    <div class="form-row">
+      <label for="description">description</label>
+      <input type="text" class="form-input" name="description" id="description">
+    </div>
+    <div class="form-row">
+      <label for="category">Category</label>
+      <input type="text" name="category" class="form-input" id="category">
+    </div>
+    <!-- end of single row -->
+    <!-- single row -->
+    <div class="form-row">
+      <label for="imageurl">Image Url</label>
+      <input type="text" name="imageurl" class="form-input" id="imageurl">
+    </div>
+    <button type="submit" class="btn btn-block">add Hostel</button>
+    </div>
+  </form>
+  <section class="container">
+  </section>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="./browser-app.js"></script>
+</body>
+
+</html>
