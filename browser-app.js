@@ -22,6 +22,11 @@ async function fetchProducts() {
        <br>
     <span>${product.location}</span>
        <br>
+
+     <span>${product.image2}</span>
+       <br>
+        <span>${product.phone}</span>
+       <br>
     <span>${product.description}</span>
        <br>
     </footer>
